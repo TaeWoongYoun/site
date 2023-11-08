@@ -1,0 +1,119 @@
+/* position : static; /* 기준이 엄서요 (좌표적용 불가) 
+    position : relative; /* 기준이 내 원래 위치요 
+    position : absolute; /* 기준이 내 부모요 
+    position : fixed; /*기준이 브라우저 창이요 (viewport) 
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.subBox{
+    width: 150px;
+    height: 70px;
+    background-color: lightsteelblue;
+    text-align: center;
+}
+
+.logoBox{
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 60px;
+}
+
+.sideBox{
+    font-size: 30px;
+    line-height: 60px;
+}
+  
+.imgBox{
+    width: 100%;
+    height: 500px;
+    /* 배경에 이미지 넣기 */
+    background-image: url(https://codingapple.com/wp-content/uploads/2019/06/shoes.jpg);
+    /* 배경으로 화면 꽉 채우기 */
+    background-size: cover;
+    /* 배경이미지가 반복되는게 싫으면 */
+    background-repeat: no-repeat;
+    /* 가운데정렬 */
+    background-position: center;
+    /* margin collapse 방지용 */
+    padding: 1px;
+    position: relative;
+}
+
+.imgBox h3{
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 800;
+    /* 부모요소 아래에 가운데정렬 시키기 
+    width는 적당히 주기*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    /* 부모요소 위에서 여백주기 */
+    top: 20%;
+}
+
+.imgBox p{
+    color: aliceblue;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    top: 35%;
+}
+
+.imgBox button{
+    padding: 15px;
+    font-size: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+    top: 60%;
+}
+
+.imgBox button a{
+    color: black;
+}
+
+.imgBox button:hover{
+    cursor: pointer;
+    font-size: 21px;
+    border: 3px solid black;
+}
+
+.textBox{
+    width: 60%;
+    background-color: #eee;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    padding: 20px;
+    margin: auto;
+}
+
+.textBox p{
+    font-size: 15px;
+}

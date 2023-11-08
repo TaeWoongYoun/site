@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지</title>
+
+</head>
+<body>
+    <main>
+        <div class="LoginPage">
+            <form action="">
+                <div class="MainBox">
+                    <h2>Contact Us</h2>
+                    <p>Your Email</p>
+                    <input type="email" class="email" placeholder="email@example.com">
+                </div>
+                <div class="leftBox">
+                    <p>First name</p>
+                    <input type="text">
+                </div>
+                <div class="rightBox">
+                    <p>Last name</p>
+                    <input type="text">
+                </div>
+                <!-- Float로 공중에 뜬 애들 위치 잡아주려고 사용 -->
+                <div style="clear: both;"></div>
+                <div class="MainBox">
+                    <p>Message</p>
+                    <textarea class="area" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <footer>
+                    <select name="성별" id="" class="sex">
+                        <option value="" disabled selected>성별</option>
+                        <option value="">남성</option>
+                        <option value="">여성</option>
+                        <option value="">비공개</option>
+                    </select>  
+                    <div class="sub">
+                        <input type="checkbox" id="sub">
+                        <label for="sub">Subscribe</label>
+                    </div>
+                    <button type="submit">SEND</button>
+                </footer>
+            </form>
+        </div>
+    </main>
+
+    <style>
+        *{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+}
+
+.LoginPage{
+    background-color: #eee;
+    padding: 30px;
+    width: 50%;
+    height: 50%;
+    max-width: 600px;
+    min-width: 400px;
+    margin: auto;
+}
+
+.MainBox{
+    padding: 5px;
+}
+
+.area{
+    width: 100%;
+    resize: none;
+}
+
+.email{
+    width: 100%;
+    padding: 5px;
+    font-style: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.leftBox , .rightBox{
+    width: 50%;
+    float: left;
+    padding: 5px;
+}
+
+footer{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10%;
+}
+
+.sex{
+    float: left;
+    width: 20%;
+    margin-right: 10%;
+    padding: 1%;
+}
+
+.sub{
+    float: left;
+    width: 40%;
+}
+
+
+
+button{
+    width: 30%;
+    height: 40%;
+    float: left;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: gold;
+}
+    </style>
+
+</body>
+</html>
