@@ -6,26 +6,30 @@
 
 *{
     box-sizing: border-box;
+    margin: 0%;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
 }
 
 a{
     text-decoration: none;
-    color: aliceblue;
-}
-
-body{
-    margin: 0;
+    color: black;
 }
 
 header{
     width: 100%;
+    height: 70px;
     display: flex;
-
+    justify-content: center;
 }
 
 .subBox{
     height: 70px;
-    background-color: black;
+    background-color: aliceblue;
     text-align: center;
 }
 
@@ -34,7 +38,7 @@ header{
     font-size: 45px;
     font-weight: 900;
     line-height: 55px;
-    color: aliceblue;
+    color: black;
     padding-left: 50px;
 }
 
@@ -44,53 +48,40 @@ header{
 
 .sideBox{
     width: 500px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 }
 
 .sideBox > ul > li{
     width: 150px;
+    height: 70px;
+    line-height: 70px;
     float: left;
     position: relative;
-}
-
-.sideBox > ul > li:nth-child(1){
-    border-left: 1px solid aliceblue;
-    border-right: 1px solid aliceblue;
-}
-
-.sideBox > ul > li:nth-child(2){
-    border-right: 1px solid aliceblue;
-}
-
-.sideBox > ul > li:nth-child(3){
-    border-right: 1px solid aliceblue;
+    
 }
 
 .sideBox > ul > li > ul{
-    margin-top: 22px;
     width: 150px;
     display: none;
     position: absolute;
-    background-color: black;
-    border: aliceblue 1px solid;
-
+    background-color: aliceblue;
 }
 
 .sideBox > ul > li > ul > li{
     padding: 10px;
 }
 
-
-
-.sideBox > ul > li:active > ul{
+.sideBox > ul > li:hover > ul{
     display: block;
-    z-index: 100;
+    z-index: 1;
 }
 
 .sideBox > ul > li > ul > li:hover{
-    background: darkblue;
+    background: antiquewhite;
 }
 
 
@@ -172,3 +163,5 @@ header{
 .textBox p{
     font-size: 15px;
 }
+
+
