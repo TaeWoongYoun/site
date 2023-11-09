@@ -10,6 +10,7 @@
 
 a{
     text-decoration: none;
+    color: aliceblue;
 }
 
 body{
@@ -17,28 +18,82 @@ body{
 }
 
 header{
+    width: 100%;
     display: flex;
-    justify-content: center;
+
 }
 
 .subBox{
-    width: 150px;
     height: 70px;
-    background-color: lightsteelblue;
+    background-color: black;
     text-align: center;
 }
 
 .logoBox{
-    font-size: 38px;
+    width: 200px;
+    font-size: 45px;
     font-weight: 900;
-    line-height: 60px;
+    line-height: 55px;
+    color: aliceblue;
+    padding-left: 50px;
+}
+
+.inputBox{
+    flex-grow: 1;
 }
 
 .sideBox{
-    font-size: 30px;
-    line-height: 60px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-  
+
+.sideBox > ul > li{
+    width: 150px;
+    float: left;
+    position: relative;
+}
+
+.sideBox > ul > li:nth-child(1){
+    border-left: 1px solid aliceblue;
+    border-right: 1px solid aliceblue;
+}
+
+.sideBox > ul > li:nth-child(2){
+    border-right: 1px solid aliceblue;
+}
+
+.sideBox > ul > li:nth-child(3){
+    border-right: 1px solid aliceblue;
+}
+
+.sideBox > ul > li > ul{
+    margin-top: 22px;
+    width: 150px;
+    display: none;
+    position: absolute;
+    background-color: black;
+    border: aliceblue 1px solid;
+
+}
+
+.sideBox > ul > li > ul > li{
+    padding: 10px;
+}
+
+
+
+.sideBox > ul > li:active > ul{
+    display: block;
+    z-index: 100;
+}
+
+.sideBox > ul > li > ul > li:hover{
+    background: darkblue;
+}
+
+
 .imgBox{
     width: 100%;
     height: 500px;
