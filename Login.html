@@ -16,12 +16,8 @@
                     <input type="email" class="email" placeholder="email@example.com">
                 </div>
                 <div class="leftBox">
-                    <p>First name</p>
-                    <input type="text">
-                </div>
-                <div class="rightBox">
-                    <p>Last name</p>
-                    <input type="text">
+                    <p>Your Passwore</p>
+                    <input type="password">
                 </div>
                 <!-- Float로 공중에 뜬 애들 위치 잡아주려고 사용 -->
                 <div style="clear: both;"></div>
@@ -31,31 +27,36 @@
                 </div>
                 <footer>
                     <select name="성별" id="" class="sex">
-                        <option value="" disabled selected>성별</option>
-                        <option value="">남성</option>
-                        <option value="">여성</option>
-                        <option value="">비공개</option>
+                        <option value="" disabled selected>gender</option>
+                        <option value="">man</option>
+                        <option value="">woman</option>
+                        <option value="">private</option>
                     </select>  
-                    <div class="sub">
-                        <input type="checkbox" id="sub">
-                        <label for="sub">Subscribe</label>
-                    </div>
                     <button type="submit">SEND</button>
                 </footer>
             </form>
         </div>
     </main>
-
     <style>
-        *{
+*{
     box-sizing: border-box;
 }
 
 body{
     margin: 0%;
+    background: #eee;
+}
+
+main{
+    margin-top: 6.5%;
+    width: 100%;
+    height: 100%;
+    background: #eee;
 }
 
 .LoginPage{
+    border: black 2px solid;
+    border-radius: 10px;
     background-color: #eee;
     padding: 30px;
     width: 50%;
@@ -82,10 +83,11 @@ body{
     border-radius: 5px;
 }
 
-.leftBox , .rightBox{
-    width: 50%;
-    float: left;
+.leftBox{
+    width: 100%;
     padding: 5px;
+    font-style: 20px;
+    border-radius: 5px;
 }
 
 footer{
@@ -101,14 +103,9 @@ footer{
     padding: 1%;
 }
 
-.sub{
-    float: left;
-    width: 40%;
-}
-
-
 
 button{
+    margin-left: 40%;
     width: 30%;
     height: 40%;
     float: left;
