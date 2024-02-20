@@ -128,9 +128,9 @@ header{
 
 .imgBox{
     width: 100%;
-    height: 500px;
+    height: 2000px;
     /* 배경에 이미지 넣기 */
-    background-image: url(https://codingapple.com/wp-content/uploads/2019/06/shoes.jpg);
+    /* background-image: url(https://codingapple.com/wp-content/uploads/2019/06/shoes.jpg); */
     /* 배경으로 화면 꽉 채우기 */
     background-size: cover;
     /* 배경이미지가 반복되는게 싫으면 */
@@ -140,6 +140,25 @@ header{
     /* margin collapse 방지용 */
     padding: 1px;
     position: relative;
+}
+
+.imgBox > img{
+    width: 100%;
+    height: 100%;
+}
+
+.img{
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    left: 100px;
+    /* box-shadow: 5px 5px 5px black; */
+    top: 300px;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
 }
 
 .imgBox h3{
